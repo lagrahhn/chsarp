@@ -19,4 +19,10 @@
       </Reference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="english\" />
+      <Folder Include="images\" />
+      <Folder Include="obj\Debug\net8.0\" />
+    </ItemGroup>
+
 </Project>
