@@ -1,0 +1,32 @@
+﻿<Window x:Class="AcrylicWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcrylicWindow"
+        mc:Ignorable="d"
+        Background="Black"
+        Title="MainWindow"
+        MouseLeftButtonDown="MainWindow_OnMouseLeftButtonDown"
+        Height="255"
+        Width="360">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="1"
+                      GlassFrameThickness="1" />
+    </WindowChrome.WindowChrome>
+    <Grid>
+        <CheckBox x:Name="DarkModeCheck"
+                  Content="DarkMode"
+                  HorizontalAlignment="Left"
+                  Margin="24,24,0,0"
+                  VerticalAlignment="Top"
+                  Foreground="White"
+                  Click="DarkModeCheck_OnClick"
+                  IsChecked="True" />
+        <Button Content="打开一个ToolWindow"
+                HorizontalAlignment="Left"
+                Margin="24,54,0,0"
+                VerticalAlignment="Top"
+                Click="Button_Click" />
+    </Grid>
+</Window>
