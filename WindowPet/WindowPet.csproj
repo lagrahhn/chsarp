@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="assests\b38.gif" />
+      <Resource Include="assests\b38.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="assests\001_ずんだもん（ノーマル）_任務完了です ma….wav" />
+      <Resource Include="assests\001_ずんだもん（ノーマル）_任務完了です ma….wav" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="AssemblyInfo.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="obj\Debug\net8.0-windows\" />
+    </ItemGroup>
+
+</Project>
